@@ -1,0 +1,30 @@
+{
+  "name": "ai-chatbot-extension",
+  "version": "1.0.0",
+  "description": "Chrome Extension with AI Chatbot using Gemini API",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.278",
+    "@types/node": "^25.2.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "terser": "^5.46.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

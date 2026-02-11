@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chatbot Settings</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>⚙️ Cấu hình AI Chatbot</h1>
+      </div>
+
+      <div class="content">
+        <div class="section">
+          <label for="apiKey">Gemini API Key</label>
+          <div class="input-group">
+            <input
+              type="password"
+              id="apiKey"
+              placeholder="Nhập API key của bạn..."
+              autocomplete="off"
+            />
+            <button id="toggleKey" class="btn-icon" title="Hiện/Ẩn API key">
+              👁️
+            </button>
+          </div>
+          <p class="hint">
+            Lấy API key tại:
+            <a href="https://makersuite.google.com/app/apikey" target="_blank">
+              Google AI Studio
+            </a>
+          </p>
+        </div>
+
+        <div class="section">
+          <label>
+            <input type="checkbox" id="enableChatbot" />
+            Kích hoạt chatbot trên tất cả trang web
+          </label>
+        </div>
+
+        <div class="status" id="status"></div>
+
+        <div class="actions">
+          <button id="saveBtn" class="btn btn-primary">💾 Lưu cấu hình</button>
+          <button id="clearBtn" class="btn btn-secondary">
+            🗑️ Xóa dữ liệu
+          </button>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Version 1.0.0</p>
+      </div>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

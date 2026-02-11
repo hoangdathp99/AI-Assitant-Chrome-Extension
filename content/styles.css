@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom gradient for Shadow DOM - Tailwind gradients don't work well with nested variables */
+@layer components {
+  .gradient-indigo-violet {
+    background: linear-gradient(to right, #4f46e5, #7c3aed);
+  }
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

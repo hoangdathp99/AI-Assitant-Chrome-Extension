@@ -1,0 +1,20 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="url(#grad1)"/>
+  
+  <!-- Chat bubble -->
+  <path d="M 40 45 Q 40 35 50 35 L 78 35 Q 88 35 88 45 L 88 65 Q 88 75 78 75 L 58 75 L 48 85 L 48 75 L 50 75 Q 40 75 40 65 Z" 
+        fill="white" opacity="0.95"/>
+  
+  <!-- Dots inside chat bubble -->
+  <circle cx="55" cy="55" r="4" fill="url(#grad1)"/>
+  <circle cx="64" cy="55" r="4" fill="url(#grad1)"/>
+  <circle cx="73" cy="55" r="4" fill="url(#grad1)"/>
+</svg>

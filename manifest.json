@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "AI Website Agent - Gemini Powered",
+  "short_name": "AI Agent",
+  "version": "1.0.0",
+  "description": "AI-powered website automation with voice control. Interact with any website using natural language commands powered by Google Gemini. | Tự động hóa website với AI và điều khiển bằng giọng nói.",
+  "author": "Your Name",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icon16.svg",
+      "48": "assets/icon48.svg",
+      "128": "assets/icon128.svg"
+    }
+  },
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["chunks/*.js", "content/content.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "assets/icon16.svg",
+    "48": "assets/icon48.svg",
+    "128": "assets/icon128.svg"
+  }
+}
